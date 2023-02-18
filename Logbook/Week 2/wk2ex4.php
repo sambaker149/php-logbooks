@@ -1,5 +1,4 @@
 <! - - Speed camera advise script - ->
-
 <?php
   $points = 13;
  // Output appropriate message depending on points awarded.
