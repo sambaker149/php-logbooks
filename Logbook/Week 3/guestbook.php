@@ -1,5 +1,5 @@
 <html>
-<head>
+	<head>
 <title>My Guestbook</title>
 </head>
 <body>
@@ -14,19 +14,11 @@
 </form>
 
 <?php
-    if(isset($_POST[note]))
+    if(isset($_POST["note"]))
     {
        // Substitute your login in place of "yourLogin"
        $fp = fopen("yourLogin.txt","a");
-       fputs($fp,nl2br($_POST[note]).'<br>');
+       fputs($fp,nl2br($_POST["note"]).'<br>');
        fclose($fp);
     }
 ?>
-<h2>The entries so far:</h2>
-
-<?php
-    // Substitute your login in place of "yourLogin"
- @ReadFile("yourLogin.txt")
-?>
-</body>
-</html>
