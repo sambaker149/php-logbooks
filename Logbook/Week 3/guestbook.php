@@ -1,5 +1,5 @@
 <html>
-	<head>
+<head>
 <title>My Guestbook</title>
 </head>
 <body>
@@ -22,3 +22,11 @@
        fclose($fp);
     }
 ?>
+<h2>The entries so far:</h2>
+
+<?php
+    // Substitute your login in place of "yourLogin"
+ @ReadFile("yourLogin.txt")
+?>
+</body>
+</html>
